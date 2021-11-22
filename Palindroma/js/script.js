@@ -21,15 +21,15 @@ if(userWordIsPalindrome == true) {
 
 // FUNZIONE
 function isPalindrome(word) {
-    let parola = '';
+    let reverseWord = '';
     let isPali = false;
     for(let i = word.length - 1; i >= 0; i--) {
         let thisLetter = word[i];
-        parola += thisLetter; 
+        reverseWord += thisLetter; 
     }
-    console.log(parola);
+    console.log(reverseWord);
 
-    if(parola === word) {
+    if(reverseWord === word) {
         isPali = true;
     }
 
