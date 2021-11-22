@@ -8,20 +8,23 @@
 
 // Chiedo all'utente se pari o dispari
 const userEvenOrOddChoice = prompt('Pari o dispari?');
-console.log(userEvenOrOddChoice);
+console.log('Hai scelto', userEvenOrOddChoice);
 
 // Chiedo all'utente di inserire un numero da 1 a 5
 const userNumber = parseInt( prompt('Inserisci un numero da 1 a 5'));
-console.log(userNumber);
+console.log('Hai inserito', userNumber);
 
 // Creo una variabile che conterrà il risultato della funzione per il computer, ossia un numero random da 1 a 5 (estremi inclusi)
 const computerNumber = getRndInteger(1,5);
-console.log(computerNumber);
+console.log('Il computer ha inserito', computerNumber);
 
 
 // test funzione somma pari o dispari
 let evenOrOddResult = ifSumIsEvenOrOdd(userNumber, computerNumber);
-console.log(evenOrOddResult);
+// console.log(evenOrOddResult);
+
+let numSum = userNumber + computerNumber;
+console.log('La somma tra i due numeri risulta', numSum);
 
 // Dichiaro chi ha vinto dopo che ho confrontato il risultato della funzione 'ifSumIsEvenOrOdd' con la scelta dell'utente (pari o dispari)
 if( (evenOrOddResult === true && userEvenOrOddChoice === 'pari') || (evenOrOddResult === false && userEvenOrOddChoice === 'dispari') ){
