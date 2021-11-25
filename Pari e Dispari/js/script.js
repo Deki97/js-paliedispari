@@ -20,13 +20,13 @@ console.log('Il computer ha inserito', computerNumber);
 
 
 // test funzione somma pari o dispari
-let evenOrOddResult = ifSumIsEvenOrOdd(userNumber, computerNumber);
+let evenOrOddResult = ifSumIsEven(userNumber, computerNumber);
 // console.log(evenOrOddResult);
 
 let numSum = userNumber + computerNumber;
 console.log('La somma tra i due numeri risulta', numSum);
 
-// Dichiaro chi ha vinto dopo che ho confrontato il risultato della funzione 'ifSumIsEvenOrOdd' con la scelta dell'utente (pari o dispari)
+// Dichiaro chi ha vinto dopo che ho confrontato il risultato della funzione 'ifSumIsEven' con la scelta dell'utente (pari o dispari)
 if( (evenOrOddResult === true && userEvenOrOddChoice === 'pari') || (evenOrOddResult === false && userEvenOrOddChoice === 'dispari') ){
     alert('Complimenti, hai vinto! :)');
 } else {
@@ -41,7 +41,7 @@ function getRndInteger(min, max) {
 
 
 // FUNZIONE PER VERIFICARE SE LA SOMMA TRA I DUE NUMERI INSERITI DALL'UTENTE E DAL COMPUTER E' PARI O DISPARI
-function ifSumIsEvenOrOdd(userNum, computerNum) {
+function ifSumIsEven(userNum, computerNum) {
     let numbersSum = userNum + computerNum;
     let isEven = false;
 
